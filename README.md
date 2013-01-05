@@ -1,6 +1,19 @@
+首先让我们先搞明白这个chef-repo能做什么。
+
+我们搭建一台Web服务器需要安装并配置Ruby, Rails, Nginx, 数据库(Postgresql), 一些软件(如imagemagcik)， 项目源代码等。
+
+这一系列的工作如果做三次，我们都不会觉得烦。因为我们认为这是应该做的。如果同样的事情要做100呢？今天我就遇到这样的事情了。[我的故事网站](http://mystory.cc)[开源](http://github.com/gazeldx/mystory/)后，很多站长用惯了php上传代码，看到DIY主机就感到害怕。我就说，如果你信得过我，请将你的主机IP和密码告诉我，我会帮你安装、配置好服务器。我操作完成后，你改掉密码即可。
+但我不能每搭一台主机都花上两个小时啊。
+
+所以我将使用[Chef](http://www.opscode.com/)技术配置服务器。Chef基于Ruby语言开发，专用于批量服务器配置。它使得开发人员通过编程的方式配置主机。
+
+这里的源代码这是搭建WEB主机写的程序。
+
+如果你感兴趣，也可以学习一下Chef技术。用我写好的chef-repo快速搭建WEB主机。Chef不像Rails那么好学，我学了整整一个月。
+
+
 Overview
 ========
-.
 Every Chef installation needs a Chef Repository. This is the place where cookbooks, roles, config files and other artifacts for managing systems with Chef will live. We strongly recommend storing this repository in a version control system such as Git and treat it like source code.
 
 While we prefer Git, and make this repository available via GitHub, you are welcome to download a tar or zip archive and use your favorite version control system to manage the code.
